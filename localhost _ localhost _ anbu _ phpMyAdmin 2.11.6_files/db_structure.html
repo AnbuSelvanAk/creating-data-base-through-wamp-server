@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0091)http://localhost/phpmyadmin/db_structure.php?db=anbu&token=f44db4146c2a0849ca5f939f199eeef8 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin(1).css.php">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+    <script type="text/javascript">
+    // <![CDATA[
+    // Updates the title of the frameset if possible (ns4 does not allow this)
+    if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+        && typeof(parent.document.title) == 'string') {
+        parent.document.title = 'localhost / localhost / anbu | phpMyAdmin 2.11.6';
+    }
+    
+    // js form validation stuff
+    var errorMsg0   = 'Missing value in the form!';
+    var errorMsg1   = 'This is not a number!';
+    var noDropDbMsg = '';
+    var confirmMsg  = 'Do you really want to ';
+    var confirmMsgDropDB  = 'You are about to DESTROY a complete database!';
+    // ]]>
+    </script>
+    <script src="./functions.js.download" type="text/javascript"></script>
+        
+    <script src="./tooltip.js.download" type="text/javascript"></script>
+    <meta name="OBGZip" content="true">
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+<div id="TooltipContainer" onmouseover="holdTooltip();" onmouseout="swapTooltip(&#39;default&#39;);"></div>
+    <div id="serverinfo">
+<a href="http://localhost/phpmyadmin/main.php?token=f44db4146c2a0849ca5f939f199eeef8" class="item">        <img class="icon" src="./s_host.png" width="16" height="16" alt=""> 
+Server: localhost</a>
+        <span class="separator"><img class="icon" src="./item_ltr.png" width="5" height="9" alt="-"></span>
+<a href="http://localhost/phpmyadmin/db_structure.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8" class="item">        <img class="icon" src="./s_db.png" width="16" height="16" alt=""> 
+Database: anbu</a>
+</div><div id="topmenucontainer">
+<ul id="topmenu">
+<li class="active"><a class="tabactive" href="http://localhost/phpmyadmin/db_structure.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php"><img class="icon" src="./b_props.png" width="16" height="16" alt="Structure">Structure</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/db_sql.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php&amp;db_query_force=1"><img class="icon" src="./b_sql.png" width="16" height="16" alt="SQL">SQL</a></li>
+<li><a class="tab warning" href="http://localhost/phpmyadmin/db_search.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php" title="Database seems to be empty!"><img class="icon" src="./b_search.png" width="16" height="16" alt="Search">Search</a></li>
+<li><a class="tab warning" href="http://localhost/phpmyadmin/db_qbe.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php" title="Database seems to be empty!"><img class="icon" src="./s_db.png" width="16" height="16" alt="Query">Query</a></li>
+<li><a class="tab warning" href="http://localhost/phpmyadmin/db_export.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php" title="Database seems to be empty!"><img class="icon" src="./b_export.png" width="16" height="16" alt="Export">Export</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/db_import.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php"><img class="icon" src="./b_import.png" width="16" height="16" alt="Import">Import</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/db_operations.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php"><img class="icon" src="./b_tblops.png" width="16" height="16" alt="Operations">Operations</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/server_privileges.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php&amp;checkprivs=anbu&amp;viewing_mode=db"><img class="icon" src="./s_rights.png" width="16" height="16" alt="Privileges">Privileges</a></li>
+<li><a class="tabcaution" href="http://localhost/phpmyadmin/sql.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8&amp;goto=db_structure.php&amp;sql_query=DROP+DATABASE+%60anbu%60&amp;zero_rows=Database+%60anbu%60+has+been+dropped.&amp;goto=main.php&amp;back=db_structure.php&amp;reload=1&amp;purge=1" onclick="return confirmLinkDropDB(this, &#39;DROP DATABASE `anbu`&#39;)"><img class="icon" src="./b_deltbl.png" width="16" height="16" alt="Drop">Drop</a></li>
+</ul>
+<div class="clearfloat"></div></div>
+<br>
+<p>No tables found in database.</p>
+<form method="post" action="http://localhost/phpmyadmin/tbl_create.php" onsubmit="return (emptyFormElements(this, &#39;table&#39;) &amp;&amp; checkFormElementInRange(this, &#39;num_fields&#39;, &#39;Table must have at least one field.&#39;, 1))">
+<fieldset>
+    <legend>
+<img class="icon" src="./b_newtbl.png" width="16" height="16" alt="">Create new table on database <a href="http://localhost/phpmyadmin/db_structure.php?db=anbu&amp;token=f44db4146c2a0849ca5f939f199eeef8" title="Jump to database &quot;anbu&quot;.">anbu</a>    </legend>
+    <input type="hidden" name="db" value="anbu">
+<input type="hidden" name="token" value="f44db4146c2a0849ca5f939f199eeef8">
+    <div class="formelement">
+        Name:
+        <input type="text" name="table" maxlength="64" size="30">
+    </div>
+    <div class="formelement">
+        Number of fields:
+        <input type="text" name="num_fields" size="2">
+    </div>
+    <div class="clearfloat"></div>
+</fieldset>
+<fieldset class="tblFooters">
+    <input type="submit" value="Go">
+</fieldset>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en-utf-8', 'utf8_unicode_ci', '1', 'anbu', '');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'anbu',
+        '',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+//]]>
+</script>
+<div id="selflink" class="print_ignore">
+<a href="http://localhost/phpmyadmin/index.php?db=anbu&amp;server=1&amp;target=db_structure.php&amp;token=f44db4146c2a0849ca5f939f199eeef8" title="Open new phpMyAdmin window" target="_blank"><img class="icon" src="./window-new.png" alt="Open new phpMyAdmin window">Open new phpMyAdmin window</a>
+</div>
+
+
+</body></html>
